@@ -15,3 +15,9 @@ jobs:
                 git checkout main
             - name: List files after
               run: ls -a
+    checkout-action:
+        runs-on: ubuntu-latest
+        steps:
+            - name: List files before cloning
+              run: ls -a
+            - uses: actions/checkout@v3
